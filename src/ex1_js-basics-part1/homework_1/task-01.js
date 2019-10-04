@@ -5,4 +5,4 @@ function getExpression (type) {
 		return "number"; 
 	}	return "undefined";
 }
-module.exports = getExpression;
+module.exports = getExpression; 

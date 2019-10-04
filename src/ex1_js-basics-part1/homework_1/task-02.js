@@ -1,8 +1,7 @@
-function checkCalcOfMass(){
-	for (num of _Mass){
-       console.log(num);
+function checkCalcOfMass(_Mass){
+	for (let num = 0; num < _Mass.length; num++) {
+       console.log(_Mass[num]);
 	}
-	let _length = _Mass.length;
-    console.log (`Number of array elements = ${_length}`);
+    console.log (`Number of array elements = ${_Mass.length}`);
 }
 module.exports = checkCalcOfMass;

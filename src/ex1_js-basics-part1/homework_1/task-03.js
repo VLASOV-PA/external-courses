@@ -1,7 +1,5 @@
 function calcElements(arr){
-  let chet = 0;
-  let nechet = 0;
-  let zero = 0;
+  let chet = 0 ,nechet = 0 ,zero = 0;
   for (let i=0 ; i < arr.length; i++){
     if (typeof arr[i]=== "number"){
       if (arr[i]=== 0 ){
@@ -13,9 +11,8 @@ function calcElements(arr){
       } else continue
     }
   } 
-  let result = [chet,nechet,zero];
-  console.log(`Сhet: ${result[0]} Nechet : ${result[1]} Zero: ${result[2]}`);
-  return result;
+  console.log([chet,nechet,zero]);
+  return [chet,nechet,zero];
 }
 module.exports = calcElements;
 
