@@ -1,4 +1,4 @@
-function checkCalcOfMass(array){
+function arrayOutput(array){
 	for (let num = 0; num < array.length; num++) {
        console.log(array[num]);
 	}
