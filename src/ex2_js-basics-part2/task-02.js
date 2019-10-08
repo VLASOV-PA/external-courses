@@ -4,4 +4,4 @@ function arrayOutput(array){
 	}
     console.log (`Number of array elements = ${array.length}`);
 }
-module.exports = checkCalcOfMass;
+module.exports = arrayOutput;
