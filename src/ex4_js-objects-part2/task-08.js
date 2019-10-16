@@ -1,4 +1,4 @@
-let strToLowerCamelCase = function(str){
+function strToLowerCamelCase(str){
 	let arrayStr = str.split(" ");
   arrayStr[0] = arrayStr[0].toLowerCase() ;
 

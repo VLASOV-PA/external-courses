@@ -1,5 +1,4 @@
-var searchSameString = function(mainString, searchString){
-	if (mainString.indexOf(searchString) !== -1) return true;
-    return false;
+function searchSameString(mainString, searchString){
+  return mainString.indexOf(searchString) !== -1
 }
 module.exports = searchSameString;

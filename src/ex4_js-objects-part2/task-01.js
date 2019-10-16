@@ -1,11 +1,9 @@
 function searchInPrototype(propertyName,objectName){
-for (let key in objectName) {
-    if (!objectName.hasOwnProperty(propertyName)){ 
-      if (propertyName in objectName){
-      return objectName[propertyName];
-      } 
-    }  
+for (let key in Object.getPrototypeOf(objectName)) {
+  if (propertyName in Object.getPrototypeOf(objectName)){
+  return Object.getPrototypeOf(objectName)[propertyName]
 }
-return undefined
+}
+return undefined;
 }
 module.exports = searchInPrototype;

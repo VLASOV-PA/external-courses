@@ -1,4 +1,4 @@
-let upperCaseAllFirstSymbols = function(str){
+function upperCaseAllFirstSymbols(str){
 	let arrayStr = str.split(" ");
 	for(let i=0;i<arrayStr.length;i++){
     let substr = arrayStr[i] 
