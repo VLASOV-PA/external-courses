@@ -1,0 +1,21 @@
+body{
+	background-color: grey;
+}
+h1 {
+  color: white;
+}
+h2{
+  color: #0000FF;
+}
+h4{
+  color: rgb(30,34,87);
+}
+table{
+  text-align:center;
+}
+img{
+  height:300px;
+}
+p{
+  text-align:left;
+}
