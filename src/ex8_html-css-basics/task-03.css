@@ -1,0 +1,41 @@
+#first{
+    height:200px;
+    width:300px;
+    border-width:10px;
+    border-color: orange;
+    border-style: ridge;
+    }
+#second{
+    height:200px;
+    width:300px;
+    border-radius:10px;
+    border-width:8px;
+    border-color: rgb(230,56,45);
+    border-style: outset;
+    }
+#third{
+    height:200px;
+    width:300px;
+    border-width:4px;
+    border-color: blue;
+    border-style: dashed;
+    }
+#third:hover{
+    border-color: black;
+    }
+#fourth{
+    height:200px;
+    width:300px;
+    border-width:20px;
+    border-color: lightblue;
+    border-style: inset;
+    }
+#fifth{
+    height:200px;
+    width:300px;
+    border-top:3px;
+    border-style:dotted;
+    border-width:thick;
+    border-top-color: red;
+    border-top-style: dashed;
+    }
