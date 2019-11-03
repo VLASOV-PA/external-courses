@@ -1,5 +1,6 @@
 body {
   padding: 30px;
+  font: 12pt/10pt sans-serif;
 }
 header {
   background: lightblue;
@@ -19,7 +20,7 @@ aside {
 header, article, section, .module {
   padding: 1rem;
 }
-#grid{
+#gridContainer{
   display:grid;
   grid-template-columns: 1fr 1fr;
 }
