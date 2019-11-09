@@ -1,0 +1,60 @@
+body{
+  background-color:black;
+  background-size:1000px 900px;
+}
+#ball{
+ background:lightgreen;
+  position:absolute;
+  width:100px;
+  height:100px;
+  border-radius:100%;
+  animation: jump-ball 2s infinite linear,
+  jump-side 5s infinite linear;
+}
+@keyframes jump-ball{
+  0% {
+    top:0%;
+    background:red;
+  }
+  5%{
+    width:140px;
+    height:70px;
+  }
+  30%{
+    width:100px;
+    height:100px;
+    background:lightgreen;
+  }
+  50%{
+    top:100%
+  }
+  65%{
+    width:140px;
+    height:70px;
+  }
+  75%{
+    width:100px;
+    height:100px;
+    background:red;
+  }
+  80%{
+    width:100px;
+    height:100px;
+    background:lightgreen;
+  }
+  90%{
+    width:100px;
+    height:100px;
+  }
+  100%{
+    top:0%
+  }
+}
+@keyframes jump-side{
+  0%{
+    left:0%;
+  }
+  100%{
+    left:100%;
+  }
+}
