@@ -19,5 +19,5 @@ header, article, section, .module {
 }
 #gridContainer{
   display:grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 81% 19%;
 }
