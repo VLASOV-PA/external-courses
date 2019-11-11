@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="Forms" content="forms">
+  <title>Forms</title>
+</head>
+<body>
+<form action="/login" method="post">
+ <fieldset>
+   <legend>Personal Data</legend>
+   <label>
+    Surname
+    <input type="text" name="surname">
+   </label><p></p>
+   <label>
+    FirstName
+    <input type="text" name="firstname">
+   </label><p></p>
+   <label>
+    Middle Name
+    <input type="text" name="middlename">
+   </label><p></p>
+   You are
+   <input type="radio" name="check" value="male"> male
+   <input type="radio" name="check" value="female"> female <p></p>
+   <label>
+   Age
+  <input type="text" name="age" placeholder="18-101">
+   </label><p></p>
+   Country of residence
+   <select name="country">
+     <option value="Russia" selected>Россия</option>
+    <option value="USA">США</option>
+     <option value="Norway">Норвегия</option>
+   </select><p></p>
+    City
+   <input  type="checkbox" name="city" value="Ryazan"> Ryazan
+   <input  type="checkbox" name="city" value="Moscow"> Moscow<p></p>
+   Photography
+   <input type="file" name="file">
+   <hr><p></p>
+   <label>
+     Title
+   </label>
+   <select name="day" size ="8">
+    <option value="Technologies" >Technologies</option>
+    <option value="Web Master" >&nbsp;&nbsp;&nbsp;Web Master</option>
+    <option value="Database Administrator" >&nbsp;&nbsp;&nbsp;Database Administrator</option>
+    <option value="Computer design" >&nbsp;&nbsp;&nbsp;Computer design</option>
+    <option value="Finance">Finance</option>
+    <option value="Economic Planning">&nbsp;&nbsp;&nbsp;Economic Planning</option>
+    <option value="Menedgment accounting">&nbsp;&nbsp;&nbsp;Menedgment accounting </option>
+    <option value="Budgeting and planning">&nbsp;&nbsp;&nbsp;Budgeting and planning</option>
+   </select><p></p>
+  Salary
+   <input type="range" name="rangeValue" min="0" max="50" value="30">
+   <p></p>
+   <textarea name="comment" placeholder="Tell us about yourself..."></textarea>
+  </fieldset>
+  <fieldset>
+    <legend>Contacn Information</legend>
+    <label>
+    Site
+    <input type="text" name="site">
+   </label><p></p>
+   <label>
+    Email
+    <input type="email" name="email-address" placeholder="name@domain.com" required>
+   </label><p></p>
+   <label>
+    Phone
+    <input type="text" name="phone" required>
+   </label>
+  </fieldset><p></p>
+  <label>
+    Password
+   <input type="text" name="password">
+  </label><p></p>
+  <input type="submit" name="btnSend" value="Отправить"> 
+  <input type="submit" name="btnReset" value="Сбросить">
+</form>
+</body>
+</html>
