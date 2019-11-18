@@ -1,125 +1,81 @@
-*{
-  margin:0;
-  padding:0;
-  outline:none;
+html{
+    height:100%;
 }
 body{
-  width:100%;
-  height:100%;
-  background: #5d6ade;
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    padding:0;
+    height: 100%;
 }
-header,footer{
-  width: 100%;
-  min-height: 55px;
-  background: #0067A3;
+.header{
+    background:rgb(24, 136, 173);
+    flex:0 0 auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-header{
-  position:absolute;
-  border-bottom:2px solid silver;
+.header .create_task{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    flex:1;
 }
-footer{
-  position:absolute;
-  left:0;
-  bottom:0;
-  border-top:2px solid silver;
-  margin-top:10px;
+.header .create_task .new_list{
+    flex:12;
+    text-align: right;
 }
-#logo{
-position: absolute;
-width: 45px;
-height: 45px;
-left: 0px;
-top: 0px;
+.header .create_task .human_face{
+    flex:1;
+    text-align: right;
+    margin-top:5px;
 }
-
-#title{
-position: absolute;
-width: 331px;
-height: 26px;
-left: 53px;
-top: 6px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 28px;
-line-height: 33px;
-color: #FFFFFF;
+.header .create_task .arrow{
+    flex:1;
+    margin-top:10px;
 }
-
-#activeTasks{
-  position: absolute;
-  width: 138px;
-  height: 21px;
-  left: 67px;
-  top: 17px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
+.header .app_logo{
+    flex:1;
 }
-#finishedTasks{
-  position: absolute;
-  width: 159px;
-  height: 21px;
-  left: 241px;
-  top: 17px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
+main{
+    background:rgb(13, 159, 207);
+    flex:1 0 auto;
 }
-#field{
-  position: absolute;
-  width: 181px;
-  height: 33px;
-  right: 60px;
-  top: 10px;
-  background: #FFFFFF;
-  border-radius: 5px;
+.loader{
+    flex:0 0 8px;
+    background:white;
 }
-#create{
-  position: absolute;
-  width: 140px;
-  height: 18px;
-  right: 55px;
-  top: 15px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  color: #000000;
+.footer{
+    background:rgb(24, 136, 173);
+    flex:0 0 75px;
+    display:flex;
+    flex-direction:row;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
 }
-#plus{
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: 200px;
-  top: 14px;
-  text-align:center;
-  border-radius:9px;
+.footer .tasks{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex:1;
+   
 }
-#plus:hover{
-  background:lightblue;
+.footer .info{
+    flex:1;
+    text-align:right;
 }
-#plus:active{
-  background:lightgreen;
+.button_create{
+    height:40px;
+    margin-top:5px;
+    border-radius:10px;
+    background:rgb(255, 255, 255);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
 }
-#rules{
-position: absolute;
-width: 279px;
-height: 21px;
-left: 849px;
-top: 17px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 21px;
-color: #FFFFFF;
-}
-
