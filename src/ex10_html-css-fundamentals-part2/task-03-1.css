@@ -1,7 +1,9 @@
+body{
+    text-align:center;
+    display:flex;
+    justify-content: center;
+}
 table{
-    position:absolute;
-    top:20%;
-    left:20%;
     width:600px;
     background:whitesmoke;
     color:gray;
