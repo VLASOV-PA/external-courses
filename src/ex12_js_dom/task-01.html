@@ -1,45 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Слайдер</title>
-	<link rel="stylesheet" type="text/css" href="task-01.css">
-	<meta charset="utf-8">
+<meta charset="utf-8">
+<title>Slaider</title>
+<link rel="stylesheet" href="task-01.css">
 </head>
 <body>
-	<div class="general">
-		<input checked type="radio" name="radio" id="desktop">
-			<article id="slider">
-					<input checked type="radio" name="slider" id="switch1">
-					<input type="radio" name="slider" id="switch2">
-					<input type="radio" name="slider" id="switch3">
-					<input type="radio" name="slider" id="switch4">
-					<input type="radio" name="slider" id="switch5">
-				<div id="slides">
-					<div id="overflow">
-						<div class="image">
-							<article><img src="asset/1.jpg"></article>
-							<article><img src="asset/2.jpg"></article>
-							<article><img src="asset/3.jpg"></article>
-							<article><img src="asset/4.jpg"></article>
-							<article><img src="asset/5.jpg"></article>
-						</div>
-					</div>
-				</div>
-				<div id="controls">
-					<label for="switch1"></label>
-					<label for="switch2"></label>
-					<label for="switch3"></label>
-					<label for="switch4"></label>
-					<label for="switch5"></label>
-				</div>
-				<div id="active">
-					<label for="switch1"></label>
-					<label for="switch2"></label>
-					<label for="switch3"></label>
-					<label for="switch4"></label>
-					<label for="switch5"></label>
-				</div>
-			</article>
-	</div>
+   <div class="slaider">
+       <div class="photo">
+         <img src="asset/1.jpeg" class="current"></img>
+         <img src="asset/2.jpeg"></img>
+         <img src="asset/3.jpg"></img>
+         <img src="asset/4.jpg"></img>
+       </div>
+       <div class="buttons">
+            <img src="asset/prev.png" class="prev" alt="Назад">
+            <img src="asset/next.png" class="next" alt="Вперед">
+       </div>
+   </div>
+<script type="text/javascript" src="task-01.js"></script>
 </body>
 </html>
