@@ -232,19 +232,19 @@ nav {
   text-shadow: 0 5px 7px rgba(0, 0, 0, .6);
 }
 
-.slideshow {
+.slideShow {
   display: flex;
   justify-content: center;
   margin-top: 120px;
 }
 
-.slideshow img {
+.slideShow img {
   width: 300px;
   cursor: pointer;
   height:170px;
 }
 
-.slideshow .like {
+.slideShow .like {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,15 +263,14 @@ nav {
   margin-right: 10px;
 }
 
-.slideshow img:hover + .like {
+.slideShow img:hover + .like {
   opacity: 1;
 }
 
-.next {
+.next-img {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 100px;
   height: 169px;
   background-color: #e8e8e8;
@@ -292,13 +291,13 @@ nav {
 }
 
 .about,
-.why {
+.why-we-exist {
   display: flex;
   width: 420px;
 }
 
 .about h3,
-.why h3 {
+.why-we-exist h3 {
   margin-bottom: 10px;
 }
 
@@ -307,10 +306,6 @@ nav {
   margin-right: 30px;
 }
 
-.why i {
-  color: #116511;
-  margin-right: 25px;
-}
 
 @media only screen and (max-width: 1024px){
   .container {
@@ -349,7 +344,7 @@ nav {
     margin-left: 240px;
   }
 
-  .slideshow {
+  .slideShow {
     display: none;
   }
 
@@ -358,14 +353,15 @@ nav {
     margin-top: 25px;
   }
 
-  .why,
+  .why-we-exist,
   .about {
     width: 100%;
   }
-  .why {
+  .why-we-exist {
     margin-top: 20px;
   }
-  .why i {
+  .why-we-exist i {
     margin-right: 15px;
+    color: #116511;
   }
 }
