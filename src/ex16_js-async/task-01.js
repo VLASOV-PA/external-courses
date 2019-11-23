@@ -8,13 +8,15 @@ function fetchAnalog(url, options) {
         xhr.open(method, url);  
         if (options) {
             for (let header in options.headers) {
-                if (header in options.headers) 
+                if (header in options.headers) {
                     xhr.setRequestHeader(header, options.headers[header]);    
+                }
             } 
             xhr.send(options.body);  
         }    
-        else 
-        xhr.send();          
+        else {
+        xhr.send();  
+        }        
         xhr.onload = function () {
             resolve("succesfull");
         };
@@ -22,5 +24,6 @@ function fetchAnalog(url, options) {
             reject("Ошибка соединения");  
         };  
     });
+    return promise;
 } 
 module.exports=fetchAnalog;
