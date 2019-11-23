@@ -1,0 +1,127 @@
+html{
+    height:100%;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+.header{
+    background:rgb(24, 136, 173);
+    flex:0 0 auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.header .create_task{
+    display:flex;
+    flex-direction: row;
+    flex:1;
+}
+.header .create_task .new_list{
+    flex:5;
+    text-align: right;
+}
+.header .create_task .profile{
+    flex:1;
+    text-align: right;
+    border-radius:10px;
+    border:3px solid rgb(64, 15, 238);
+}
+.header .create_task .profile .human_face{
+    flex:3;
+    text-align: center;
+    margin-top:5px;
+}
+.header .create_task .profile .arrow{
+    flex:1;
+    margin-top:10px;
+    text-align: left;
+}
+.header .app_logo{
+    flex:1;
+}
+main{
+    background:rgb(13, 159, 207);
+    flex:1 0 auto;
+}
+.loader{
+    flex:0 0 8px;
+    background:white;
+}
+.footer{
+    background:rgb(24, 136, 173);
+    flex:0 0 75px;
+    display:flex;
+    flex-direction:row;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.footer .tasks{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex:1;
+   
+}
+.footer .info{
+    flex:1;
+    text-align:right;
+}
+.button_create{
+    height:40px;
+    margin-top:5px;
+    border-radius:10px;
+    background:rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+#human{
+    background:white;
+    border-radius:8px;
+}
+.profile{
+    display:flex;
+    justify-content: space-around;
+}
+.profile:hover{
+    background: rgb(98, 112, 190);
+    cursor: pointer;
+}
+.button_create:hover{
+    cursor:pointer;
+}
+#ul{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+position: absolute;
+min-height:100px;
+width:110px;
+top:50px;
+right:0;
+border-radius:10px;
+border:5px solid rgb(26, 26, 189);
+}
+#ul:hover{
+    cursor:pointer;
+}
+ #ul .li{
+    border-radius:10px;
+    border:2px solid blue;
+    color:white;
+    font-family:Roboto;
+    text-align: center;
+}
+#ul .li:hover{
+    background: slategray;
+    cursor:pointer;
+}
