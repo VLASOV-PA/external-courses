@@ -1,0 +1,81 @@
+html{
+    height:100%;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+.header{
+    background:rgb(24, 136, 173);
+    flex:0 0 auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header .create_task{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    flex:1;
+}
+.header .create_task .new_list{
+    flex:12;
+    text-align: right;
+}
+.header .create_task .human_face{
+    flex:1;
+    text-align: right;
+    margin-top:5px;
+}
+.header .create_task .arrow{
+    flex:1;
+    margin-top:10px;
+}
+.header .app_logo{
+    flex:1;
+}
+main{
+    background:rgb(13, 159, 207);
+    flex:1 0 auto;
+}
+.loader{
+    flex:0 0 8px;
+    background:white;
+}
+.footer{
+    background:rgb(24, 136, 173);
+    flex:0 0 75px;
+    display:flex;
+    flex-direction:row;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.footer .tasks{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex:1;
+   
+}
+.footer .info{
+    flex:1;
+    text-align:right;
+}
+.button_create{
+    height:40px;
+    margin-top:5px;
+    border-radius:10px;
+    background:rgb(255, 255, 255);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
