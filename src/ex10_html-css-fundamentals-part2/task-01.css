@@ -1,0 +1,15 @@
+div{
+	border:6px dotted gold;
+	display: flex;
+}
+#circle {
+  -webkit-clip-path: circle(30% at 50% 50%);
+  clip-path: circle(30% at 50% 50%);
+}
+#star{
+ width: 500px;
+ height: 500px;
+ background: black url(https://4kwallpaper.org/wp-content/uploads/Firefox-2-2.jpg);
+  -webkit-clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+}
