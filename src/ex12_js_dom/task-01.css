@@ -1,13 +1,13 @@
-.slaider{
+.slider{
     width: 600px;
     text-align: center;
     margin: 0 auto; 
 }
-.photo{
+.photos{
     position: relative;
     height: 400px;
 }
-.photo img{
+.photos img{
     width: 100%;
     position: absolute;
     opacity: 0;
@@ -16,16 +16,17 @@
     transition: opacity 1s;
     transition-duration: 2.5s;
 }
-.photo img.current{
+.photos img.current{
      opacity: 2;
 }
-.prev:hover, .next:hover{
+.back:hover, .next:hover{
     background: rgb(255, 199, 14);
+    cursor: pointer;
 }
-.prev:active, .next:active{
+.back:active, .next:active{
     background: chartreuse;
 }
-.prev , .next{
+.back , .next{
     border-radius:50%
 }
 .buttons{

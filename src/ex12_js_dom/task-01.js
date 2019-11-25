@@ -1,20 +1,26 @@
-let number = 0;
-let prevButton = document.querySelector('.buttons .prev'),
- nextButton = document.querySelector('.buttons .next');
-let images = document.querySelectorAll('.photo img');
-prevButton.onclick = function(){
-   images[number].className = "";
-    number--;
-    if( number < 0){
-      number = images.length - 1;  
+let currentItem = 0;
+let back = document.querySelector('.buttons .back'),
+next = document.querySelector('.buttons .next');
+let images = document.querySelectorAll('.photos img');
+back.onclick = function(){
+   images[currentItem].className = "";
+   currentItem--;
+    if( currentItem < 0){
+      currentItem = images.length - 1;  
     }
-    images[number].className = "current";
+    images[currentItem].className = "current";
 };
-nextButton.onclick = function(){
-    images[number].className = "";
-    number++;
-    if( number >= images.length){
-      number = 0;  
+next.onclick = function(){
+    images[currentItem].className = "";
+    currentItem++;
+    if( currentItem >= images.length){
+      currentItem = 0;  
     }
-    images[number].className = "current";
+    images[currentItem].className = "current";
 };
+document.onkeydown=function(){
+if (window.event.keyCode===9){
+  document.onkeydown=next.onclick;
+}
+}
+
