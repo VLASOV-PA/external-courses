@@ -1,0 +1,35 @@
+.slider{
+    width: 600px;
+    text-align: center;
+    margin: 0 auto; 
+}
+.photos{
+    position: relative;
+    height: 400px;
+}
+.photos img{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    height:400px;
+    left: 0;
+    transition: opacity 1s;
+    transition-duration: 2.5s;
+}
+.photos img.current{
+     opacity: 2;
+}
+.back:hover, .next:hover{
+    background: rgb(255, 199, 14);
+    cursor: pointer;
+}
+.back:active, .next:active{
+    background: chartreuse;
+}
+.back , .next{
+    border-radius:50%
+}
+.buttons{
+    display:flex;
+    justify-content: space-between;
+}
